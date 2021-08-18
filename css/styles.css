@@ -56,8 +56,19 @@ img {
 a {
   text-decoration: none;
 }
+.aboutContainer,
+.servicesContainer,
+.faqsContainer,
+.logisticContainer,
+.quotesContainer,
+.instructionsContainer,
+.formContainer,
+.providerContainer {
+  padding: 40px 20px;
+}
 .title {
   margin-bottom: 30px;
+  text-align: center;
 }
 /*Header*/
 header {
@@ -165,10 +176,6 @@ header {
   font: var(--body2);
 }
 /*About*/
-.aboutContainer,
-.servicesContainer, .faqsContainer {
-  padding: 40px 20px;
-}
 
 .aboutDescription p {
   margin-bottom: 30px;
@@ -182,19 +189,17 @@ header {
 .servicesContainer {
   background-color: var(--bgColor1);
 }
-.servicesContainer h3,
-.servicesContainer h2 {
+.servicesContainer h3 {
   text-align: center;
 }
 .servicesContainer h3 {
   margin-bottom: 10px;
-  color:var(--bgColor2);
+  color: var(--bgColor2);
   font: var(--body2);
   text-transform: uppercase;
 }
 .servicesContainer h2 {
-  color:var(--fontColorSecondary);
-  
+  color: var(--fontColorSecondary);
 }
 .cardContainer {
   display: flex;
@@ -202,10 +207,13 @@ header {
   justify-content: center;
   gap: 15px;
 }
-.card {
+.cardGeneral {
+  text-align: center;
   padding: 15px;
   min-width: 280px;
   max-width: 350px;
+}
+.cardGeneral.cardService {
   background-color: var(--bgColorCard);
   color: var(--bgColorPrimary);
 }
@@ -217,7 +225,7 @@ header {
   margin: 15px 0;
 }
 .card h4 {
-  font: var(--body4);  
+  font: var(--body4);
 }
 .card p {
   margin-top: 15px;
@@ -225,34 +233,139 @@ header {
 }
 /*FAQs*/
 .faqsContainer {
-  
   margin: auto;
+  min-width: 320px;
+  max-width: 768px;
 }
 
 .faqsTitle {
-  padding:0 10px;
-  border:0;
-  border-bottom:1px black solid;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;  
-  width:100%;
-  height:60px;
-  outline:none;
-  color: white;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  outline: none;
+  color: var(--bgColorPrimary);
   background: var(--bgColor2);
   margin: 0;
   cursor: pointer;
-  font:var(--button)
+  font: var(--button);
 }
 .faqsDescription {
   display: none;
-  margin: 0;  
+  margin: 0;
   padding: 16px 19px 24px;
-  font:var(--caption)
+  font: var(--caption);
+}
+/*Logistic*/
+.logisticContainer {
+  background-color: var(--bgColor3);
+}
+.cardGeneral.cardLogistic {
+  background-color: var(--bgColorPrimary);
+  color: var(--fontColorPrimary);
+}
+/*Quote*/
+.quotesContainer {
+  background-color: var(--bgColor2);
+  color: var(--fontColorSecondary);
+}
+.quotesContainer p {
+  text-align: center;
+}
+.quotesContainer p:first-child {
+  font: var(--headLine4);
 }
 
+.quotesContainer p:last-child {
+  font: var(--body3);
+}
+/*contact*/
 
+.instructionsContainer {
+  background-color: var(--bgColor3);
+}
+.instructionsContainer h2 {
+  font: var(--headLine4);
+}
+.instructionsContainer p {
+  margin-bottom: 30px;
+}
+.instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instruction div:first-child {
+  width: 40px;
+}
+.instruction div:last-child h4 {
+  font: var(--body2);
+}
+.instruction div:last-child p {
+  font: var(--caption);
+}
+.formContainer {
+  background-color: var(--bgColor1);
+}
+input,
+textarea {
+  background-color: var(--bgColorCard);
+  color: var(--bgColorPrimary);
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+input {
+  height: 40px;
+}
+/*Povider*/
+
+.providerContent {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 0;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.providerContent::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.providerContent::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+.providerContent::-webkit-scrollbar-track:horizontal {
+  background: var(--bgColor1);
+  border-radius: 10px;
+}
+.providerContent::-webkit-scrollbar-thumb {
+  background: var(--bgColor2);
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 8px var(--white) inset;
+}
+.provider {
+  margin: 0 5px;
+  min-width: 170px;
+  text-align: center;
+  position: relative;
+}
+
+/*Media*/
+@media screen and (min-width: 768px) {
+  .contactContainer {
+    padding: 40px;
+    display: flex;
+  }
+  .instructionsContainer,
+  .formContainer {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .brandContainer {
     width: 25%;
@@ -281,5 +394,8 @@ header {
   }
   .aboutContainer div {
     width: 50%;
+  }
+  .providerContent {
+    justify-content: center;
   }
 }
