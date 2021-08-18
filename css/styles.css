@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  --fontBase: "Inter", sans-serif;
+  --white: #ffffff;
+  --black: #000000;
+  --bgColorPrimary: #ffffff;
+  --bgColor1: #292b37;
+  --bgColor2: #018199;
+  --bgColor3: #e0f2f6;
+  --bgColorCard: #373743;
+  --transparent: transparent;
+  --fontColorPrimary: var(--black);
+  --fontColorSecondary: var(--white);
+  --overlay: rgba(0, 0, 0, 0.5);
+  --overlay1: #00000083;
+  --headLine1: bold 5.5rem/7rem var(--fontBase);
+  --headLine2: bold 4rem/5rem var(--fontBase);
+  --headLine3: bold 3.2rem/3.5rem var(--fontBase);
+  --headLine4: bold 2.4rem/3.4rem var(--fontBase);
+  --headLine5: bold 2rem/2.6rem var(--fontBase);
+  --body1: normal 1.8rem/2.7rem var(--fontBase);
+  --body2: bold 1.8rem/2.7rem var(--fontBase);
+  --body3: normal 1.4rem/2.4rem var(--fontBase);
+  --body4: bold 1.4rem/2.4rem var(--fontBase);
+  --button: bold 1.8rem/2.7rem var(--fontBase);
+  --caption: normal 1.2rem/2.7rem var(--fontBase);
+}
+
+body {
+  font: var(--body1);
+  position: relative;
+  background-color: var(--bgColorPrimary);
+  overflow-x: hidden;
+}
+
+.wrapperMain {
+  max-width: 1366px;
+  margin: auto;
+  /* padding-top: 60px;*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+.title {
+  margin-bottom: 30px;
+}
+/*Header*/
+header {
+  background-color: var(--overlay1);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+}
+
+.wrapperHeader {
+  margin: auto;
+  max-width: 1366px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.brandContainer {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.brandContainer img {
+  height: 100%;
+}
+
+.menuContainer {
+  width: 50%;
+  text-align: end;
+}
+
+.menuContainer .menuButton {
+  padding-right: 10px;
+  background-color: var(--transparent);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.menuContent {
+  position: relative;
+  width: 50vw;
+}
+
+.menu {
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: -768px;
+  height: 100vh;
+  background-color: var(--overlay1);
+
+  transition: right 0.3s ease-in-out;
+}
+
+.menuItem {
+  padding: 20px;
+}
+
+.menuItem a {
+  color: var(--fontColorSecondary);
+  text-transform: uppercase;
+}
+
+.menuContent .show {
+  right: 0px;
+}
+
+/*Banner*/
+.swiper-slide picture img {
+  height: 90vh;
+  width: 100%;
+}
+
+.bannerContainer {
+  position: relative;
+}
+.bannerDescription {
+  padding: 0 20px;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 9;
+}
+.bannerDescription {
+  background-color: var(--overlay);
+}
+.bannerDescription h1 {
+  font: var(--headLine2);
+  color: var(--fontColorSecondary);
+}
+.bannerDescription h1 span {
+  display: block;
+}
+.bannerDescription h2 {
+  color: var(--fontColorSecondary);
+  font: var(--body2);
+}
+/*About*/
+.aboutContainer,
+.servicesContainer, .faqsContainer {
+  padding: 40px 20px;
+}
+
+.aboutDescription p {
+  margin-bottom: 30px;
+}
+.aboutImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Services*/
+.servicesContainer {
+  background-color: var(--bgColor1);
+}
+.servicesContainer h3,
+.servicesContainer h2 {
+  text-align: center;
+}
+.servicesContainer h3 {
+  margin-bottom: 10px;
+  color:var(--bgColor2);
+  font: var(--body2);
+  text-transform: uppercase;
+}
+.servicesContainer h2 {
+  color:var(--fontColorSecondary);
+  
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.card {
+  padding: 15px;
+  min-width: 280px;
+  max-width: 350px;
+  background-color: var(--bgColorCard);
+  color: var(--bgColorPrimary);
+}
+.card img {
+  margin-bottom: 10px;
+}
+.card h3 {
+  font: var(--body2);
+  margin: 15px 0;
+}
+.card h4 {
+  font: var(--body4);  
+}
+.card p {
+  margin-top: 15px;
+  font: var(--body3);
+}
+/*FAQs*/
+.faqsContainer {
+  
+  margin: auto;
+}
+
+.faqsTitle {
+  padding:0 10px;
+  border:0;
+  border-bottom:1px black solid;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;  
+  width:100%;
+  height:60px;
+  outline:none;
+  color: white;
+  background: var(--bgColor2);
+  margin: 0;
+  cursor: pointer;
+  font:var(--button)
+}
+.faqsDescription {
+  display: none;
+  margin: 0;  
+  padding: 16px 19px 24px;
+  font:var(--caption)
+}
+
+
+@media screen and (min-width: 1024px) {
+  .brandContainer {
+    width: 25%;
+  }
+  .menuContainer {
+    width: 75%;
+  }
+  .menuButton {
+    display: none;
+  }
+  .menuContent {
+    position: relative;
+    width: 100%;
+  }
+  .menu {
+    background-color: transparent;
+    width: 100%;
+    justify-content: space-evenly;
+    position: static;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .aboutContainer {
+    display: flex;
+  }
+  .aboutContainer div {
+    width: 50%;
+  }
+}
