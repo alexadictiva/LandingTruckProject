@@ -63,7 +63,7 @@ a {
 .quotesContainer,
 .instructionsContainer,
 .formContainer,
-.providerContainer {
+.benefitContainer {
   padding: 40px 20px;
 }
 .title {
@@ -151,7 +151,7 @@ header {
 .bannerDescription {
   padding: 0 20px;
   width: 100%;
-  height: 99%;
+  height: 98.5%;
   position: absolute;
   top: 0;
   display: flex;
@@ -211,7 +211,11 @@ header {
   text-align: center;
   padding: 15px;
   min-width: 280px;
-  max-width: 350px;
+  max-width: 300px;
+}
+.cardService {
+  box-shadow: 0 0 4px var(--bgColor3);
+  border-radius: 5px;
 }
 .cardGeneral.cardService {
   background-color: var(--bgColorCard);
@@ -268,16 +272,25 @@ header {
   background-color: var(--bgColorPrimary);
   color: var(--fontColorPrimary);
 }
+.cardwhyus {
+  box-shadow: 0 0 8px var(--bgColor1);
+  border-radius: 10px;
+}
+.cardwhyus h3 {
+  margin: 10px 0;
+}
 /*Quote*/
 .quotesContainer {
   background-color: var(--bgColor2);
   color: var(--fontColorSecondary);
+  margin-bottom: 10px;
 }
 .quotesContainer p {
   text-align: center;
 }
 .quotesContainer p:first-child {
   font: var(--headLine4);
+  margin-bottom: 10px;
 }
 
 .quotesContainer p:last-child {
@@ -327,7 +340,7 @@ input {
 }
 /*Povider*/
 
-.providerContent {
+.benefitContent {
   width: 100%;
   margin-top: 10px;
   padding: 15px 0;
@@ -335,61 +348,64 @@ input {
   overflow-x: scroll;
 }
 
-.providerContent::-webkit-scrollbar {
+.benefitContent::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-.providerContent::-webkit-scrollbar:horizontal {
+.benefitContent::-webkit-scrollbar:horizontal {
   height: 10px;
 }
-.providerContent::-webkit-scrollbar-track:horizontal {
+.benefitContent::-webkit-scrollbar-track:horizontal {
   background: var(--bgColor1);
   border-radius: 10px;
 }
-.providerContent::-webkit-scrollbar-thumb {
+.benefitContent::-webkit-scrollbar-thumb {
   background: var(--bgColor2);
   border-radius: 20px;
   border: 1px solid var(--black);
   box-shadow: 2px 2px 8px var(--white) inset;
 }
-.provider {
+.benefit {
   margin: 0 5px;
   min-width: 170px;
   text-align: center;
   position: relative;
 }
 /*footer*/
-footer{
+footer {
   background-color: var(--bgColor1);
-  padding: 40px 20px;
-  color: var(--bgColorPrimary)
+
+  color: var(--bgColorPrimary);
 }
-.footerBrand{
-  margin-bottom: 20px;
+.footerBrand {
   text-align: center;
+  padding: 40px 20px;
 }
-.infoFooterContainer{
+.infoFooterContainer {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.addressContainer h3, .rrssContainer h3{
+.addressContainer h3,
+.rrssContainer h3 {
   font: var(--headLine5);
   text-align: center;
 }
 
-.itemFooter{
+.itemFooter {
   margin-bottom: 20px;
 }
-.itemFooter div, .itemFooter div a{
+.itemFooter div,
+.itemFooter div a {
   display: flex;
   color: var(--bgColorPrimary);
 }
 
-.itemFooter div img{
-  margin-right:10px;
+.itemFooter div img {
+  margin-right: 10px;
 }
 
-.firmContainer{
+.firmContainer {
   background-color: var(--bgColorCard);
   height: 60px;
   display: flex;
@@ -407,14 +423,15 @@ footer{
   .formContainer {
     width: 50%;
   }
-  footer{
+  /* footer {
     padding: 40px 0 0;
-  }
-  .infoFooterContainer{
+  } */
+  .infoFooterContainer {
     flex-direction: row;
   }
 
-  .addressContainer, .rrssContainer{
+  .addressContainer,
+  .rrssContainer {
     width: 50%;
     padding: 0 30px;
   }
@@ -448,7 +465,16 @@ footer{
   .aboutContainer div {
     width: 50%;
   }
-  .providerContent {
+  .instructionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 40px 100px;
+  }
+  .benefitContent {
     justify-content: center;
+  }
+  .benefitContent::-webkit-scrollbar {
+    display: none;
   }
 }
