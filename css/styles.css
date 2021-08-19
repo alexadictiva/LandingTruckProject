@@ -59,7 +59,7 @@ a {
 .aboutContainer,
 .servicesContainer,
 .faqsContainer,
-.logisticContainer,
+.whyusContainer,
 .quotesContainer,
 .instructionsContainer,
 .formContainer,
@@ -260,11 +260,11 @@ header {
   padding: 16px 19px 24px;
   font: var(--caption);
 }
-/*Logistic*/
-.logisticContainer {
+/*whyus*/
+.whyusContainer {
   background-color: var(--bgColor3);
 }
-.cardGeneral.cardLogistic {
+.cardGeneral.cardwhyus {
   background-color: var(--bgColorPrimary);
   color: var(--fontColorPrimary);
 }
