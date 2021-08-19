@@ -357,6 +357,45 @@ input {
   text-align: center;
   position: relative;
 }
+/*footer*/
+footer{
+  background-color: var(--bgColor1);
+  padding: 40px 20px;
+  color: var(--bgColorPrimary)
+}
+.footerBrand{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.infoFooterContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.addressContainer h3, .rrssContainer h3{
+  font: var(--headLine5);
+  text-align: center;
+}
+
+.itemFooter{
+  margin-bottom: 20px;
+}
+.itemFooter div, .itemFooter div a{
+  display: flex;
+  color: var(--bgColorPrimary);
+}
+
+.itemFooter div img{
+  margin-right:10px;
+}
+
+.firmContainer{
+  background-color: var(--bgColorCard);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*Media*/
 @media screen and (min-width: 768px) {
@@ -367,6 +406,17 @@ input {
   .instructionsContainer,
   .formContainer {
     width: 50%;
+  }
+  footer{
+    padding: 40px 0 0;
+  }
+  .infoFooterContainer{
+    flex-direction: row;
+  }
+
+  .addressContainer, .rrssContainer{
+    width: 50%;
+    padding: 0 30px;
   }
 }
 @media screen and (min-width: 1024px) {
