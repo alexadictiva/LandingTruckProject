@@ -214,7 +214,7 @@ header {
   text-align: center;
 }
 .servicesContainer h3 {
-  margin-bottom: 10px;
+  margin: 15px 0;
   color: var(--bgColor2);
   font: var(--body2);
   text-transform: uppercase;
@@ -491,6 +491,9 @@ footer {
     flex-direction: column;
     align-items: baseline;
     padding: 40px 100px;
+  }
+  .quotesContainer {
+    padding: 60px 40px;
   }
   .benefitContent {
     justify-content: center;
