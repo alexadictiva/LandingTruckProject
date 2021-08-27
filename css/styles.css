@@ -13,8 +13,8 @@
   --white: #ffffff;
   --black: #000000;
   --bgColorPrimary: #ffffff;
-  --bgColor1: #292b37;
-  --bgColor2: #018199;
+  --bgColor1: #221E1E;
+  --bgColor2:#018199 ;  /* / #2E3093*/
   --bgColor3: #e0f2f6;
   --bgColorCard: #373743;
   --transparent: transparent;
@@ -43,6 +43,7 @@ body {
 }
 
 .wrapperMain {
+  padding-top:60px;
   max-width: 1366px;
   margin: auto;
   /* padding-top: 60px;*/
@@ -101,7 +102,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: var(--overlay1);
+  background-color: var(--bgColor1);
 }
 
 .brandContainer {
@@ -110,7 +111,7 @@ header {
 }
 
 .brandContainer img {
-  height: 100%;
+  height: 66px;
 }
 
 .menuContainer {
@@ -129,6 +130,7 @@ header {
 .menuContent {
   position: relative;
   width: 50vw;
+  
 }
 
 .menu {
@@ -138,7 +140,7 @@ header {
   top: 14px;
   right: -768px;
   height: 100vh;
-  background-color: var(--overlay1);
+  background-color: var(--bgColor1);
 
   transition: right 0.3s ease-in-out;
 }
@@ -157,11 +159,8 @@ header {
 }
 
 /*Banner*/
-.swiper-wrapper {
-  height: 90vh !important;
-}
+
 .swiper-slide picture img {
-  height: 90vh;
   width: 100%;
 }
 
@@ -171,10 +170,10 @@ header {
 .bannerDescription {
   padding: 0 20px;
   width: 100%;
-  /*height: 100%;*/
+  height: 98.5%;
   position: absolute;
   top: 0;
-  bottom: 0;
+  /*bottom: 0;*/
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -184,6 +183,7 @@ header {
 }
 .bannerDescription {
   background-color: var(--overlay);
+  display: none;
 }
 .bannerDescription h1 {
   font: var(--headLine2);
@@ -325,14 +325,17 @@ header {
 .instructionsContainer h2 {
   font: var(--headLine4);
 }
-.instructionsContainer p {
-  margin-bottom: 30px;
+.instructionsInfo{
+  margin-bottom:25px;
+}
+.instructionsContainer{
   font: var(--body3);
 }
 .instruction {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 .instruction div:first-child {
   width: 40px;
@@ -359,7 +362,7 @@ textarea {
 input {
   height: 40px;
 }
-/*Povider*/
+/*Provider*/
 
 .benefitContent {
   width: 100%;
@@ -436,6 +439,12 @@ footer {
 
 /*Media*/
 @media screen and (min-width: 768px) {
+  .bannerDescription{
+    display: flex;
+  }
+  .aboutContainer {
+    display: flex;
+  }
   .contactContainer {
     padding: 40px;
     display: flex;
@@ -444,9 +453,9 @@ footer {
   .formContainer {
     width: 50%;
   }
-  /* footer {
-    padding: 40px 0 0;
-  } */
+  .footerBrand img{
+    width: 50%;
+  }
   .infoFooterContainer {
     flex-direction: row;
   }
@@ -480,9 +489,7 @@ footer {
     display: flex;
     align-items: center;
   }
-  .aboutContainer {
-    display: flex;
-  }
+  
   .aboutContainer div {
     width: 50%;
   }
