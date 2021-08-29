@@ -13,8 +13,8 @@
   --white: #ffffff;
   --black: #000000;
   --bgColorPrimary: #ffffff;
-  --bgColor1: #221E1E;
-  --bgColor2:#018199 ;  /* / #2E3093*/
+  --bgColor1: #221e1e;
+  --bgColor2: #018199; /* / #2E3093*/
   --bgColor3: #e0f2f6;
   --bgColorCard: #373743;
   --transparent: transparent;
@@ -43,7 +43,7 @@ body {
 }
 
 .wrapperMain {
-  padding-top:60px;
+  padding-top: 60px;
   max-width: 1366px;
   margin: auto;
   /* padding-top: 60px;*/
@@ -111,7 +111,7 @@ header {
 }
 
 .brandContainer img {
-  height: 66px;
+  vertical-align: middle;
 }
 
 .menuContainer {
@@ -130,7 +130,6 @@ header {
 .menuContent {
   position: relative;
   width: 50vw;
-  
 }
 
 .menu {
@@ -160,8 +159,21 @@ header {
 
 /*Banner*/
 
-.swiper-slide picture img {
+.swiper {
   width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bannerContainer {
@@ -170,7 +182,7 @@ header {
 .bannerDescription {
   padding: 0 20px;
   width: 100%;
-  height: 98.5%;
+  height: 100%;
   position: absolute;
   top: 0;
   /*bottom: 0;*/
@@ -325,10 +337,10 @@ header {
 .instructionsContainer h2 {
   font: var(--headLine4);
 }
-.instructionsInfo{
-  margin-bottom:25px;
+.instructionsInfo {
+  margin-bottom: 25px;
 }
-.instructionsContainer{
+.instructionsContainer {
   font: var(--body3);
 }
 .instruction {
@@ -347,12 +359,14 @@ header {
   font: var(--caption);
 }
 .formContainer {
+  text-align: center;
   background-color: var(--bgColor1);
 }
 input,
 textarea {
   background-color: var(--bgColorCard);
   color: var(--bgColorPrimary);
+  font: var(--body4);
   width: 100%;
   margin-bottom: 10px;
   padding: 0 5px;
@@ -361,6 +375,14 @@ textarea {
 }
 input {
   height: 40px;
+  padding-left: 10px;
+}
+
+textarea {
+  padding-top: 5px;
+}
+.submit {
+  width: 50%;
 }
 /*Provider*/
 
@@ -404,6 +426,9 @@ footer {
   text-align: center;
   padding: 40px 20px;
 }
+.footerBrand img {
+  width: 50%;
+}
 .infoFooterContainer {
   padding: 0 20px;
   display: flex;
@@ -439,7 +464,7 @@ footer {
 
 /*Media*/
 @media screen and (min-width: 768px) {
-  .bannerDescription{
+  .bannerDescription {
     display: flex;
   }
   .aboutContainer {
@@ -453,7 +478,7 @@ footer {
   .formContainer {
     width: 50%;
   }
-  .footerBrand img{
+  .footerBrand img {
     width: 50%;
   }
   .infoFooterContainer {
@@ -489,7 +514,7 @@ footer {
     display: flex;
     align-items: center;
   }
-  
+
   .aboutContainer div {
     width: 50%;
   }

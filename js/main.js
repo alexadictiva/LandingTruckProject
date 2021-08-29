@@ -4,14 +4,10 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 /*Banner Slider */
-var swiper1 = new Swiper(".mySwiper1", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  //autoplay
+
+var swiper = new Swiper(".mySwiper", {
   autoplay: {
-    delay: 25000,
+    delay: 2500,
     disableOnInteraction: false,
   },
 });
