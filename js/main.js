@@ -1,6 +1,7 @@
 /*Menu Button*/
 function toggleMenu() {
   var menu = document.querySelector("#menu");
+
   menu.classList.toggle("show");
 }
 /*Banner Slider */
