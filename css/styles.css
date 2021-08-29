@@ -295,7 +295,7 @@ header {
   display: none;
   margin: 0;
   padding: 16px 19px 24px;
-  font: var(--caption);
+  font: var(--body4);
 }
 /*whyus*/
 .whyusContainer {
