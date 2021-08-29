@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 $(document).ready(function () {
-  $(".menu-toggle").click(function () {
+  $(".menuToggle").click(function () {
     $(this).toggleClass("open");
   });
 });

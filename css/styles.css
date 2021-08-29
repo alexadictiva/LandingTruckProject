@@ -125,22 +125,18 @@ header {
   text-align: end;
 }
 
-/*animacion meni*/
-.menu-toggle {
+.menuToggle {
   height: 25px;
   position: relative;
-
   transform: rotate(0deg);
-
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  /* margin: 90px auto;*/
   width: 40px;
 }
 
-.menu-toggle i,
-.menu-toggle i:after,
-.menu-toggle i:before {
+.menuToggle i,
+.menuToggle i:after,
+.menuToggle i:before {
   display: block;
   position: absolute;
   height: 3px;
@@ -151,34 +147,33 @@ header {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-.menu-toggle i:after,
-.menu-toggle i:before {
+.menuToggle i:after,
+.menuToggle i:before {
   content: "";
 }
-.menu-toggle i:after {
+.menuToggle i:after {
   top: -32px;
 }
-.menu-toggle i:before {
+.menuToggle i:before {
   top: -16px;
 }
-.menu-toggle i {
+.menuToggle i {
   top: 32px;
 }
-.menu-toggle.open i:after {
+.menuToggle.open i:after {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -22px;
 }
-.menu-toggle.open i:before {
+.menuToggle.open i:before {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: -22px;
 }
-/*fin animacion menu*/
 
 .menuContainer .menuButton {
   padding-right: 10px;
