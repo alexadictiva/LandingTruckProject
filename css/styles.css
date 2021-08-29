@@ -125,6 +125,61 @@ header {
   text-align: end;
 }
 
+/*animacion meni*/
+.menu-toggle {
+  height: 25px;
+  position: relative;
+
+  transform: rotate(0deg);
+
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  /* margin: 90px auto;*/
+  width: 40px;
+}
+
+.menu-toggle i,
+.menu-toggle i:after,
+.menu-toggle i:before {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  right: 0;
+  background: var(--bgColor3);
+  border-radius: 2px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.menu-toggle i:after,
+.menu-toggle i:before {
+  content: "";
+}
+.menu-toggle i:after {
+  top: -32px;
+}
+.menu-toggle i:before {
+  top: -16px;
+}
+.menu-toggle i {
+  top: 32px;
+}
+.menu-toggle.open i:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -22px;
+}
+.menu-toggle.open i:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -22px;
+}
+/*fin animacion menu*/
+
 .menuContainer .menuButton {
   padding-right: 10px;
   background-color: var(--transparent);
@@ -325,7 +380,6 @@ header {
 .quotesContainer {
   background-color: var(--bgColor2);
   color: var(--fontColorSecondary);
-  margin-bottom: 10px;
 }
 .quotesContainer p {
   text-align: center;

@@ -4,6 +4,12 @@ function toggleMenu() {
 
   menu.classList.toggle("show");
 }
+
+$(document).ready(function () {
+  $(".menu-toggle").click(function () {
+    $(this).toggleClass("open");
+  });
+});
 /*Banner Slider */
 
 var swiper = new Swiper(".mySwiper", {
