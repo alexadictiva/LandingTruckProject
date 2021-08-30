@@ -105,10 +105,10 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url("./../assets/img/bgMenu.svg");
+ /* background-image: url("./../assets/img/bgMenu.svg");
   background-position: 0px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .brandContainer {
@@ -349,6 +349,7 @@ header {
   margin: 0;
   cursor: pointer;
   font: var(--button);
+  text-align:left
 }
 .faqsDescription {
   display: none;
