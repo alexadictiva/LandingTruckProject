@@ -16,7 +16,7 @@
   --bgColorPrimary: #ffffff;
   --bgColor1: #221E1E; /* #221e1e */
   --bgColor2: #3e4095; /*rgb(62,64,129) / #018199 / #2E3093*/
-  --bgColor3: #e0f2f6;
+  --bgColor3: #eeeeee; /*#e0f2f6*/
   --bgColorCard: #373743;
   --transparent: transparent;
   --fontColorPrimary: var(--black);
